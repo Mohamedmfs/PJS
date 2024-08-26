@@ -49,21 +49,19 @@ const showPerson = () => {
   img.src = item.img;
   author.textContent = item.name;
   job.textContent = item.job;
-  info.textContent = item.text;
+  info.textContent = item.info;
 }
 
 prevBtn.addEventListener('click', () => {
   currentItem--;
-
   if (currentItem < 0) {
-    currentItem = 3;
+    currentItem = reviews.length - 1;
   }
   showPerson();
 })
 
 nextBtn.addEventListener('click', () => {
   currentItem++;
-
   if (currentItem > reviews.length - 1) {
     currentItem = 0;
   }
@@ -71,9 +69,9 @@ nextBtn.addEventListener('click', () => {
 })
 
 randomBtn.addEventListener('click', () => {
-  let randomPerson = Math.floor(Math.random * reviews.length);
+  currentItem = Math.floor(Math.random() * reviews.length);
+  showPerson();
 })
-
 
 
 
