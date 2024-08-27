@@ -1,11 +1,14 @@
-const navToggle = document.querySelector(".nav-toggle");
-const links = document.querySelector(".links");
+const toggleBtn = document.querySelector(".sidebar-toggle");
+const closeBtn = document.querySelector(".close-btn");
+const sidebar = document.querySelector(".sidebar");
 
-const addRemove = () => {
-  links.classList.toggle('show-links');
-}
+toggleBtn.addEventListener('click', () => {
+  sidebar.classList.toggle('show-sidebar');
+})
 
-navToggle.addEventListener("click", addRemove);
+closeBtn.addEventListener('click', () => {
+  sidebar.classList.remove('show-sidebar');
+})
 
 
 
