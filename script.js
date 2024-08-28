@@ -1,18 +1,15 @@
-// select modal-btn,modal-overlay,close-btn
-// listen for click events on modal-btn and close-btn
-// when user clicks modal-btn add .open-modal to modal-overlay
-// when user clicks close-btn remove .open-modal from modal-overlay
+const btns = document.querySelectorAll(".question-btn");
+const questions = document.querySelectorAll(".question");
 
-const modalBtn = document.querySelector(".modal-btn");
-const modal = document.querySelector(".modal-overlay");
-const closeBtn = document.querySelector(".close-btn");
-
-modalBtn.addEventListener('click', () => {
-  modal.classList.add('open-modal');
-})
-
-closeBtn.addEventListener('click', () => {
-  modal.classList.remove('open-modal');
+btns.forEach((btn) => {
+  btn.addEventListener('click', (e) => {
+    const question = e.currentTarget.parentElement.parentElement;
+      if (question) {
+        question.classList.toggle('show-text');
+      } else if (question !== 'show-text') {
+      question.classList.remove('show-text');
+      }
+  }) 
 })
 
 
