@@ -1,5 +1,11 @@
-const persons = ['Ali', 'Hassan', 'Khalid']
-
-for (let i = 0; i < persons.length; i++) {
-  console.log(i);
+const showNumbers = (limit) => {
+  for (let i = 0; i <= limit; i++) {
+    if (i % 2 === 0) {
+      console.log(i, 'EVEN');
+    } else {
+      console.log(i, 'ODD');
+    }
+  }
 }
+
+showNumbers(5);
