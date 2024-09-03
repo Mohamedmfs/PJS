@@ -1,18 +1,5 @@
-const checkSpeed = (speed) => {
-  const speedLimit = 70;
-  const mPerPoint = 5;
+const persons = ['Ali', 'Hassan', 'Khalid']
 
-  if (speed <= speedLimit) {
-    console.log('Ok');
-  } else {
-    const points = Math.floor((speed - speedLimit) / mPerPoint);
-    
-    if(points >= 12) {
-      console.log('License suspended');
-    } else {
-      console.log('Points', points);
-    }
-  }
+for (let i = 0; i < persons.length; i++) {
+  console.log(i);
 }
-
-checkSpeed(130);
