@@ -1,21 +1,12 @@
-const fizzBuzz = (input) => {
+const array = [true, 1, 2, '', false,];
 
-  if (typeof input !== 'number')
-    return NaN;
+const countTruthy = (item) => {
+  let count = 0;
 
-  if (input % 15 === 0)
-    return 'FizzBuzz'
-
-  if (input % 3 === 0)
-    return 'Fizz';
-
-  if (input % 5 === 0)
-    return 'Buzz';
-
-  if (input % 3 === 0 && input % 5 === 0)
-    return 'FizzBuzz';
-  
-    return input;
+  for (const value of array)
+    if (value)
+      count++;
+  return count;
 }
 
-console.log(fizzBuzz(false));
+console.log(countTruthy(array));
