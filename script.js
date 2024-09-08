@@ -1,15 +1,9 @@
-const showPrimes = (limit) => {
-  for (let i = 2; i <= limit; i++) {
+let x = 10;
+let y = x;
 
-    let isPrime = true;
-    for (let j = 2; j < i; j++) {
-      if (j % i === 0)
-        isPrime = false;
-        break;
-    }
-    if (isPrime)
-      console.log(i)
-  }
-}
+console.log(x, y);
 
-showPrimes(20);
+x = 20;
+y = x;
+console.log(x, y);
+
