@@ -1,9 +1,8 @@
-let x = 10;
-let y = x;
+const number = 239.6736;
 
-console.log(x, y);
+const change = Math.pow(number)
 
-x = 20;
-y = x;
-console.log(x, y);
+console.log(change);
+
+
 
