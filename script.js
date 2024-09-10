@@ -1,8 +1,6 @@
-const number = 239.6736;
+const message = 'This is my first message.';
 
-const change = Math.pow(number)
-
-console.log(change);
+const another = new message
 
 
 
