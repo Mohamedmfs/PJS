@@ -1,4 +1,6 @@
-const date1 = new Date('08/08/1998 15:30');
+const date1 = new Date();
+
+console.log(date1.toLocaleString());
 
 console.log(date1);
 
