@@ -1,8 +1,7 @@
-const message = 'This is my first message.';
+const date1 = new Date('08/08/1998 15:30');
 
-const another = new String('Hello it is my second message');
+console.log(date1);
 
-console.log(typeof another);
 
 
 
