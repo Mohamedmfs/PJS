@@ -1,9 +1,12 @@
-const date1 = new Date();
+const address = {
+  street: '1999 Mlk Jr. Way S',
+  city: 'Columbus',
+  zipcode: 43231
+}
 
-console.log(date1.toLocaleString());
+const showAddress = (address) => {
+  for (key in address) 
+    console.log(key, address[key] )
+}
 
-console.log(date1);
-
-
-
-
+console.log(showAddress(address));
