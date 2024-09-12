@@ -1,19 +1,26 @@
-function Address(street, city, zipcode) {
-  this.street = street,
-  this.city = city,
-  this.zipcode = zipcode
+const post = {
+  title: 'Post',
+  body: 'knsjdnsdnlknsdlkn k skfv kjvkjvnvkv ivk vurhr',
+  author: 'Hassan Habib',
+  views: 21,
+  comments: [
+    {author: 'Habib Ali',
+    body: 'dgfbjdnjkbd uisdbjkvnjsv svbjksdhui hviuvbdbsjbs'},
+
+    {author: 'khabib Ali',
+      body: 'dgfbjdnjkbd uisdbjkvnjsv svbjksdhui hviuvbdbsjbs'},
+  ],
+  isLive: true
 }
 
-const newAddress1 = new Address('1999 Mlk Jr. Way S', 'Columbus', 43231);
-const newAddress2 = new Address('1999 Mlk Jr. Way S', 'Columbus', 43231);
+console.log(post)
 
-const areEqual = (newAddress1, newAddress2) => {
-  return newAddress1.street === newAddress2.street && newAddress1.city === newAddress2.city && newAddress1.zipcode === newAddress2.zipcode
+function Post(title, body, author) {
+  this.title = title;
+  this.body = body;
+  this.author = author;
 }
 
-const areSame = (newAddress1, newAddress2) => {
-  return newAddress1 === newAddress2;
-}
-console.log(areEqual(newAddress1, newAddress2));
-console.log(areSame(newAddress1, newAddress2));
+const newPost = new Post('my title', 'a', 'khabib')
 
+console.log(newPost);
