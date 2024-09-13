@@ -4,7 +4,7 @@ const courses = [
 ]
 
 const course = courses.find((course) => {
-  return course.name === 'a';
+  return course.id === 1;
 })
 
 console.log(course);
