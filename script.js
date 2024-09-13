@@ -1,11 +1,5 @@
-const courses = [
-  {id: 1, name: 'c'},
-  {id: 2, name: 'b'},
-  {id: 3, name: 'a'}
-]
+const numbers = [1, 2, 3, 4];
 
-const course = courses.find((course) => {
-  return course.id === 3;
-})
+numbers.splice(0, 2);
 
-console.log(course);
+console.log(numbers);
