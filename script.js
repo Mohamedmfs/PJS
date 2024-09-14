@@ -1,7 +1,6 @@
-const first = [{id: 1}];
-const second = [4, 5, 6, 7, 8];
+const numbers = [1, 2, 3, 4, 5, 6];
 
-const combined = first.concat(second);
-
-console.log(combined);
+numbers.forEach((number) => {
+  console.log(number);
+})
 
