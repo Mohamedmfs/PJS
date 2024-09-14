@@ -1,6 +1,7 @@
-const message = 'This is my message.'
+const message = 'I my name is Ali';
 
-const split = message.split(' ')
-const joined = split.join('-');
-console.log(joined);
+const joined = message.split(' ');
+const parts = joined.join('-');
+
+console.log(parts);
 
