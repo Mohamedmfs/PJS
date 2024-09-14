@@ -1,6 +1,6 @@
-const numbers = [1, 2, 3, 4, 5, 6];
+const message = 'This is my message.'
 
-numbers.forEach((number) => {
-  console.log(number);
-})
+const split = message.split(' ')
+const joined = split.join('-');
+console.log(joined);
 
