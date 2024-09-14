@@ -1,3 +1,7 @@
-let numbers = [1, 2, 3, 4];
+const first = [{id: 1}];
+const second = [4, 5, 6, 7, 8];
 
-console.log(numbers.length);
+const combined = first.concat(second);
+
+console.log(combined);
+
