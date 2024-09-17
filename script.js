@@ -1,11 +1,5 @@
-const products = [
-  {name: 'Shirt', price: 20},
-  {name: 'Shoes', price: 50},
-  {name: 'Pants', price: 40},
-]
+const arrayFromRange = (min, max) => {
+  return 
+}
 
-const reduced = products.reduce((acc, cur) => {
-  return acc + cur.price;
-}, 0)
-
-console.log(reduced);
+console.log(arrayFromRange(2, 4));
