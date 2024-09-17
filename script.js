@@ -1,8 +1,11 @@
-const numbers = [1, -1, 2, 3, 4];
+const products = [
+  {name: 'Shirt', price: 20},
+  {name: 'Shoes', price: 50},
+  {name: 'Pants', price: 40},
+]
 
-const filtered = numbers
-.filter(n => n >= 1)
-.map(n => ({ value: n }))
-.filter(obj => obj.value > 2);
+const reduced = products.reduce((acc, cur) => {
+  return acc + cur.price;
+}, 0)
 
-console.log(filtered);
+console.log(reduced);
