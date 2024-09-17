@@ -1,7 +1,8 @@
-const message = 'I my name is Ali';
+const numbers = [1, -1, 2, 3, 4];
 
-const joined = message.split(' ');
-const parts = joined.join('-');
+const filtered = numbers
+.filter(n => n >= 1)
+.map(n => ({ value: n }))
+.filter(obj => obj.value > 2);
 
-console.log(parts);
-
+console.log(filtered);
