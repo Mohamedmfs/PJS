@@ -1,9 +1,18 @@
-const numbers = [1, 2, 3, 4];
+const movies = [
+  { title: 'a', year: 2018, rating: 4.5 },
+  { title: 'b', year: 2018, rating: 4.7 },
+  { title: 'c', year: 2018, rating: 3 },
+  { title: 'd', year: 2017, rating: 4.5 },
+];
 
-const getMax = (array) => {
-  if (array.length === 0) return undefined;
-
-  return array.reduce((a, b) => (a > b) ? a : b);
+const sortMovies = () => {
+  movies.filter((movie) => {
+    return movie.year === 2018;
+  }).
+  sort((a, b) => {
+    
+  })
+      
 }
 
-console.log(getMax([]));
+console.log(sortMovies());
