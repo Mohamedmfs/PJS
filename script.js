@@ -1,8 +1,5 @@
-const arrayFromRange = (min, max) => {
-  const output = [];
-  for (let i = min; i <= max; i++)
-    output.push(i);
-  return output;
-}
+const numbers = [1, 2, 3, 4];
 
-console.log(arrayFromRange(12, 4));
+const includes = () => {
+  
+}
