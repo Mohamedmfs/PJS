@@ -1,5 +1,8 @@
 const arrayFromRange = (min, max) => {
-  return 
+  const output = [];
+  for (let i = min; i <= max; i++)
+    output.push(i);
+  return output;
 }
 
-console.log(arrayFromRange(2, 4));
+console.log(arrayFromRange(12, 4));
