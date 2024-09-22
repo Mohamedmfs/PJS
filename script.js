@@ -1,5 +1,5 @@
-function sum(...args) {
-  return args.reduce((acc, cur) => acc + cur, 0)
+const haram = (principal , rate = 3.5, years = 5) => {
+  return principal * rate / 100 * years;
 }
 
-console.log(sum(100, 2, 3, 4, 5));
+console.log(haram(10000));
