@@ -1,8 +1,5 @@
-function sum(a, b) {
-  let total = 0;
-  for (let value of arguments)
-    total += value;
-  return total;
+function sum(...args) {
+  return args.reduce((acc, cur) => acc + cur, 0)
 }
 
-console.log(sum(10, 2, 3, 4, 5));
+console.log(sum(100, 2, 3, 4, 5));
