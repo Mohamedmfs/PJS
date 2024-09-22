@@ -1,11 +1,8 @@
-const numbers = [1, 2, 3, 4];
-
-const except = (array, excluded) => {
-  const output = [];
-  for (let element of array)
-    if (!excluded.includes(element))
-      output.push(element)
-    return output
+const sum = (a, b) => {
+  let total = 0;
+  for (let value of arguments)
+    total += value;
+  return total;
 }
 
-console.log(except(numbers, [4, 1]));
+console.log(1, 2, 3, 4, 5);
