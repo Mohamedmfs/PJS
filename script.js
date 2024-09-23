@@ -1,5 +1,28 @@
-const haram = (principal , rate = 3.5, years = 5) => {
-  return principal * rate / 100 * years;
+const person = {
+  firstName: 'Mosh',
+  lastName: 'Hamedani',
+
+  set fullName(value) {
+    if (typeof value !== 'string')
+      throw new Error('Value is not a string')
+
+    const parts = value.split(' ');
+    if (parts.length !== 2)
+      throw new Error('Enter first and last name')
+
+    this.firstName = parts[0];
+    this.lastName = parts[1];
+  }
 }
 
-console.log(haram(10000));
+try {
+  person.fullName = true;
+}
+
+catch (e) {
+  alert(e);
+  
+}
+console.log(person);
+
+
