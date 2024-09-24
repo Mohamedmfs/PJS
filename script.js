@@ -1,28 +1,20 @@
-const person = {
-  firstName: 'Mosh',
-  lastName: 'Hamedani',
+// const video = {
+//   title: 'a',
+//   play() {
+//     console.log(this);
+//   }
+// }
 
-  set fullName(value) {
-    if (typeof value !== 'string')
-      throw new Error('Value is not a string')
+// const video = {
+//   title: 'a',
+//   tags: ['a', 'b', 'c'],
+//   showTags() {
+//     const self = this;
+//     self.tags.forEach(function(tag) {
+//       console.log(self.title, tag);
+//     })
+//   }
+// }
 
-    const parts = value.split(' ');
-    if (parts.length !== 2)
-      throw new Error('Enter first and last name')
-
-    this.firstName = parts[0];
-    this.lastName = parts[1];
-  }
-}
-
-try {
-  person.fullName = true;
-}
-
-catch (e) {
-  alert(e);
-  
-}
-console.log(person);
-
+// video.showTags();
 
