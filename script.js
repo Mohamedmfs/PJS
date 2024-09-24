@@ -18,3 +18,8 @@
 
 // video.showTags();
 
+function playVideo() {
+  console.log(this);
+}
+
+playVideo();
