@@ -22,4 +22,5 @@ function playVideo() {
   console.log(this);
 }
 
-playVideo();
+playVideo.call( { name: 'Mosh' });
+playVideo.apply( { name: 'Moshika' });
