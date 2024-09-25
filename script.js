@@ -1,6 +1,6 @@
-const sum = (...args) => {
-  return args.reduce((acc, cur) =>
-    acc + cur)
+const circle = {
+  radius: 2,
+  area: 20
 }
-
-console.log(sum([1, 2, 3, 4, 5]));
+circle.radius = 3
+console.log(circle);
