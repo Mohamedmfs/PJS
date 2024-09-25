@@ -1,12 +1,6 @@
-const video = {
-  title: 'a',
-  tags: ['a', 'b', 'c'],
+const sum = (...args) => {
+  return args.reduce((acc, cur) =>
+    acc + cur)
+}
 
-  showTags () {
-    this.tags.forEach((tag) => {
-      console.log(this.title, tag);
-    });
-  }
-};
-
-video.showTags();
+console.log(sum([1, 2, 3, 4, 5]));
