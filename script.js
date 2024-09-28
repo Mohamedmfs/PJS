@@ -1,14 +1,12 @@
+// Factory Functions
+function createCircle(radius) {
+  return {
+    radius,
+    draw: function () {
+      console.log("draw");
+    },
+  };
+}
 
-const circle = {
-  radius: 1,
-  location: {
-    x: 1,
-    y: 2
-  },
-  draw() {
-    console.log('draw');
-  }
-};
-
-circle.draw();
-  
+const circle = createCircle(2);
+console.log(circle);
