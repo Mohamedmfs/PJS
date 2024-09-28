@@ -1,6 +1,14 @@
+
 const circle = {
-  radius: 2,
-  area: 20
-}
-circle.radius = 3
-console.log(circle);
+  radius: 1,
+  location: {
+    x: 1,
+    y: 2
+  },
+  draw() {
+    console.log('draw');
+  }
+};
+
+circle.draw();
+  
