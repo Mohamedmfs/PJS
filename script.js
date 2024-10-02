@@ -7,7 +7,6 @@ function Circle(radius) {
 
 const circle = new Circle(10);
 
-circle.location = { a: 1, b: 2};
-delete circle.location;
-
-console.log(circle);
+for (let key in circle) {
+  console.log(key, circle[key]);
+}
