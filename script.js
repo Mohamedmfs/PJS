@@ -5,5 +5,5 @@ function Circle(radius) {
   }
 }
 
-const circle = new Circle(7);
+const circle = new Circle(9);
 console.log(circle);
